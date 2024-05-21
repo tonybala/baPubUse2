@@ -26,6 +26,10 @@
 		s+='            <div id="ba_jinten_menu2"></div>                                                                            ' ;
 		s+='        </div>                                                                                               ' ;
 		s+='    </div>                                                                                                   ' ;
+		s+='    <style>                                                                                                   ' ;
+		s+='      #ba_jinten_menu2 .btn-primary { width:24px;height:24px }   ' ;
+		s+='      #ba_jinten_menu2 .btn-default  { width:24px;height:24px }  ' ;
+		s+='    </style>                                                     ' ;
 		return s;
 	}
 	function initBaMenu() {
