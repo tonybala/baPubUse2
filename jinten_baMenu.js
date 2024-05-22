@@ -66,32 +66,30 @@
 				setPage(nextPage);
 			},
 			formatCell: function (row, key) {
+				var doPdf2 = '<i class="fa fa-file-pdf-o" style="margin-left: 10px;color: blue;"></i>';
 				if (key === '檢知管編號') {
 					if (row["檢知管編號文件網址"] == "")
-						return $('<span></span>').addClass('text-uppercase').text(row[key]);
+						return $('<span></span>').text(row[key]);
 					else
-						return $('<a href="' + row["檢知管編號文件網址"] + '">' + row[key] + '</a>');
+						return $('<a href="' + row["檢知管編號文件網址"] + '">' + row[key] +doPdf2+ '</a>');
 				}
 				if (key === '檢知管類型') {
 					if (row["檢知管類型文件網址"] == "")
-						return $('<span></span>').addClass('text-uppercase').text(row[key]);
+						return $('<span></span>').text(row[key]);
 					else
-						return $('<a href="' + row["檢知管類型文件網址"] + '">' + row[key] + '</a>');
+						return $('<a href="' + row["檢知管類型文件網址"] + '">' + row[key] +doPdf2+ '</a>');
 				}
 				if (key === '說明') {
 					if (row["說明文件網址"] == "")
-						return $('<span></span>').addClass('text-uppercase').text(row[key]);
+						return $('<span></span>').text(row[key]);
 					else
-						return $('<a href="' + row["說明文件網址"] + '">' + row[key] + '</a>');
-				}
-				if (key === 'fullName') {
-					return $('<span></span>').addClass('text-uppercase').text(row[key]);
+						return $('<a href="' + row["說明文件網址"] + '">' + row[key] +doPdf2+ '</a>');
 				}
 				// Finally return cell for rest of columns;
 				return row[key];
 			},
 		});
 	}
-	//debugger;
+	debugger;
 	initBaMenu();
 })(window);
