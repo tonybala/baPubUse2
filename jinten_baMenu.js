@@ -4,10 +4,11 @@
 		s+='    <div class="page-container">                                                                             ' ;
 		s+='        <div class="container">                                                                              ' ;
 		s+='            <div class="row mt-5 mb-3 align-items-center">                                                   ' ;
-		s+='                <div class="col-md-5">                                                                       ' ;
+		s+='                <div class="col-md-4">                                                                       ' ;
+		s+='                歡迎多加利用搜尋功能,可用任一字眼快速查詢產品                                                        ' ;
 		s+='                </div>                                                                                       ' ;
-		s+='                <div class="col-md-3">                                                                       ' ;
-		s+='                  <input type="text" class="form-control" placeholder="Search in table..." id="ba_jinten_menu2_searchField"> ' ;
+		s+='                <div class="col-md-4">                                                                       ' ;
+		s+='                  <input type="text" class="form-control" placeholder="請在此輸入關鍵字..." id="ba_jinten_menu2_searchField"> ' ;
 		s+='                </div>                                                                                       ' ;
 		s+='                <div class="col-md-2 text-right">                                                            ' ;
 		s+='                  <span class="pr-3">Rows Per Page:</span>                                                   ' ;
@@ -33,7 +34,7 @@
 		return s;
 	}
 	function initBaMenu() {
-		$('body').append( boostrap_grid_html() );
+		$('#content > div > div.row').after( boostrap_grid_html() );
 		//console.log('initBaMenu 2');
 		var table = $('#ba_jinten_menu2').tableSortable({
 			data: ba_jinten_menu_items2,
@@ -91,6 +92,6 @@
 			},
 		});
 	}
-	debugger;
+	//debugger;
 	initBaMenu();
 })(window);
