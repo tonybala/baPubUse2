@@ -36,7 +36,7 @@
 	function initBaMenu() {
 		$('#content > div > div.row').after( boostrap_grid_html() );
 		//console.log('initBaMenu 2');
-		var table = $('#ba_jinten_menu2').tableSortable({
+		var baTable2 = $('#ba_jinten_menu2').tableSortable({
 			data: ba_jinten_menu_items2,
 			columns: ba_jinten_menu_columns2,
 			nextText: ">",
@@ -89,6 +89,11 @@
 				return row[key];
 			},
 		});
+
+		$('#changeRows').on('change', function() {
+			baTable2.updateRowsPerPage(parseInt($(this).val(), 10));
+		})		
+
 	}
 	debugger;
 	initBaMenu();
