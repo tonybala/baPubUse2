@@ -11,7 +11,7 @@
 		s+='                  <input type="text" class="form-control" placeholder="請在此輸入關鍵字..." id="ba_jinten_menu2_searchField"> ' ;
 		s+='                </div>                                                                                       ' ;
 		s+='                <div class="col-md-2 text-right">                                                            ' ;
-		s+='                  <span class="pr-3">Rows Per Page:</span>                                                   ' ;
+		s+='                  <span class="pr-3">每頁顯示筆數:</span>                                                   ' ;
 		s+='                </div>                                                                                       ' ;
 		s+='                <div class="col-md-2">                                                                       ' ;
 		s+='                    <div class="d-flex justify-content-end">                                                 ' ;
