@@ -67,7 +67,7 @@
 				setPage(nextPage);
 			},
 			formatCell: function (row, key) {
-				var doPdf2 = '<i class="fa fa-file-pdf-o" style="margin-left: 10px;color: #a91717;"></i>';
+				var doPdf2 = '<i class="fa fa-file-pdf-o" style="margin-right: 10px;color: #a91717;"></i>';
 				if (key === '檢知管編號') {
 					if (row["檢知管編號文件網址"] == "")
 						return $('<span></span>').text(row[key]);
