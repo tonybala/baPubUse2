@@ -17,8 +17,8 @@
 		s += '                    <div class="d-flex justify-content-end">                                                 ';
 		s += '                        <select class="custom-select" name="rowsPerPage" id="changeRows">                    ';
 		s += '                            <option value="1">1</option>                                                     ';
-		s += '                            <option value="5" selected>5</option>                                            ';
-		s += '                            <option value="10">10</option>                                                   ';
+		s += '                            <option value="5">5</option>                                            ';
+		s += '                            <option value="10" selected>10</option>                                                   ';
 		s += '                            <option value="15">15</option>                                                   ';
 		s += '                        </select>                                                                            ';
 		s += '                    </div>                                                                                   ';
