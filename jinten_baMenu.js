@@ -51,7 +51,7 @@
 			//        },
 			//    },
 			//},
-			rowsPerPage: 5,
+			rowsPerPage: 10,
 			pagination: true,
 			tableWillMount: function () {
 				console.log('table will mount')
